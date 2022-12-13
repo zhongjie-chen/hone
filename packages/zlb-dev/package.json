@@ -1,5 +1,5 @@
 {
-  "name": "@haoduo/zlb-dev",
+  "name": "@hd-lib/zlb-dev",
   "version": "0.0.3",
   "description": "zlb dev",
   "author": "chenzhongjie <chenzhongjie@haoduo.vip>",
@@ -37,5 +37,5 @@
   "files": [
     "dist"
   ],
-  "gitHead": "8c698d76921020c5b3b4da4bd66126fb37c6834a"
+  "gitHead": "421309e5cb330a79c67ec40b8c83dbf10ef85776"
 }
