@@ -1,5 +1,6 @@
 {
   "name": "@haoduo/zlb-dev",
+  "version": "0.0.1",
   "description": "zlb dev",
   "author": "chenzhongjie <chenzhongjie@haoduo.vip>",
   "main": "dist/zlb-dev.cjs.js",
