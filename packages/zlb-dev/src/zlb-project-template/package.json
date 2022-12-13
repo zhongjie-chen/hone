@@ -1,0 +1,11 @@
+{
+  "name": "hd-template",
+  "version": "0.0.1",
+  "description": "浙里办",
+  "scripts": {
+    "build": "echo hello"
+  },
+  "author": "",
+  "dependencies": {},
+  "devDependencies":{}
+}

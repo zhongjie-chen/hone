@@ -1,0 +1,6 @@
+{
+    "type": "gov-build-config",
+    "version": "1",  
+    "outputPath": "dist",
+    "entryHTML": "/h5/index.html"
+}

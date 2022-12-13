@@ -1,0 +1,30 @@
+{
+  "name": "@haoduo/zlb-dev-test",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "chenzhongjie <chenzhongjie@haoduo.vip>",
+  "homepage": "",
+  "type": "commonjs",
+  "private": "true",
+  "license": "ISC",
+  "main": "lib/zlb-dev-test.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "scripts": {
+    "test": "rimraf dest.zip && rimraf dest && node ./__tests__/zlb-dev-test.test.js"
+  },
+  "dependencies": {
+    "@hd/zlb-dev": "*"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
