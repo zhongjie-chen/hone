@@ -1,6 +1,6 @@
 {
   "name": "haoduo-zlb-dev-test",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "chenzhongjie <chenzhongjie@haoduo.vip>",
   "homepage": "",
@@ -22,7 +22,7 @@
     "test": "rimraf dest.zip && rimraf dest && node ./__tests__/zlb-dev-test.test.js"
   },
   "dependencies": {
-    "haoduo-zlb-dev": "*"
+    "haoduo-zlb-dev": "^0.0.5"
   },
   "devDependencies": {
     "commander": "^9.4.1",
