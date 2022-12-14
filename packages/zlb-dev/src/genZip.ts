@@ -7,6 +7,7 @@ const DIR_NAME = "dest";
 const destZipPath = path.resolve(process.cwd(), `${DIR_NAME}.zip`);
 const templateDir = path.join(__dirname, "./zlb-project-template");
 function zipDest(zlbDistDir?: string) {
+  fs.existsSync(destZipPath) && fs.removeSync(destZipPath);
   const output = fs.createWriteStream(destZipPath);
   const archive = archiver("zip", {
     zlib: { level: 9 },
@@ -38,7 +39,12 @@ function zipDest(zlbDistDir?: string) {
 
   archive.directory(templateDir, `/`);
   if (zlbDistDir) {
-    archive.directory(path.join(process.cwd(), zlbDistDir), `/dest`);
+    archive.directory(path.join(process.cwd(), zlbDistDir), `/${zlbDistDir}`);
+    const gbcFile = path.join(process.cwd(), "gbc.json");
+    if (!fs.existsSync(gbcFile)) {
+      throw "根目录需要gbc.json";
+    }
+    archive.file(gbcFile, { name: "/gbc.json" });
   }
 
   archive.finalize();

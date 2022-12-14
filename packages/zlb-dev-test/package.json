@@ -22,9 +22,10 @@
     "test": "rimraf dest.zip && rimraf dest && node ./__tests__/zlb-dev-test.test.js"
   },
   "dependencies": {
-    "@hd/zlb-dev": "*"
+    "haoduo-zlb-dev": "*"
   },
   "devDependencies": {
+    "commander": "^9.4.1",
     "rimraf": "^3.0.2"
   }
 }
