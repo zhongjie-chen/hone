@@ -29,9 +29,9 @@
     "url": "https://github.com/zhongjie-chen/hone/issues"
   },
   "dependencies": {
-    "haoduo-zlb-dev": "^0.0.5"
+    "haoduo-zlb-dev": "^0.0.5",
+    "commander": "^9.4.1"
   },
   "devDependencies": {
-    "commander": "^9.4.1"
   }
 }
